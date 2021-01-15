@@ -26,11 +26,13 @@ Valid operators:
 * `add src1 src2 dst`: add the values from `src1` and `src2`, and copy the result into the register `dst`. Each of `src1` and `src2` can be a literal integer (expressed as a hex), or a register.
 * `jmp cond src`: if `cond` is greater than 0, jump to the value in `src`. `cond` can be a literal integer (expressed as a hex), or a register. Likewise, `src` can be a literal integer (hex), or a register.
 
-This is a toy assembly language, so I have only implemented one mov instruction, one binary operation, and one conditional jump. Other operators and memory could be added following the same pattern.
+This is a toy assembly language, so I have only implemented a move instruction, a binary operation, and a conditional jump. Other operators and memory can be added, following the same pattern.
+
 
 ## The parser
 
-The tool will read such toy assembly files, parse them, and convert them into BAP code.
+This tool will read such toy assembly files, parse them, and convert them into BIL.
+
 
 ## Try it
 
